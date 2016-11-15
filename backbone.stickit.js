@@ -168,7 +168,12 @@
       initializeClasses($el, config, model, modelAttr);
 
       if (modelAttr) {
-        // Setup one-way (input element -> model) bindings.
+        // Setup one-way (
+        
+        
+        
+        
+        element -> model) bindings.
         _.each(config.events, _.bind(function(type) {
           var eventName = type + namespace;
           var listener = function(event) {
@@ -435,7 +440,7 @@
     events: ['input', 'change']
   }, {
     selector: 'input',
-    events: ['propertychange', 'input', 'change'],
+    events: ['propertychange', 'input', 'change', 'keyup'],
     update: function($el, val) { $el.val(val); },
     getVal: function($el) {
       return $el.val();
